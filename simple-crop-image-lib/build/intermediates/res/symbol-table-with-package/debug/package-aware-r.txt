@@ -1,0 +1,24 @@
+eu.janmuller.android.simplecropimage
+color black
+color btn_create_account
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+drawable camera_crop_height
+drawable camera_crop_width
+drawable ic_rotate_left
+drawable ic_rotate_right
+drawable indicator_autocrop
+id discard
+id image
+id rotateLeft
+id rotateRight
+id save
+layout cropimage
+string cancel
+string no_storage_card
+string not_enough_space
+string preparing_card
+string save
+string saving_image
+style CropButton
