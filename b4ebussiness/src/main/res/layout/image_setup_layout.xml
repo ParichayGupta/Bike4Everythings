@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/imgBackRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#9a41465b">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ic_dialog_close_dark" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/signup_image"
+                    android:layout_below="@+id/imgBackRl"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_box"
+                    android:layout_height="240dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#e9e9e9"
+                        android:src="@drawable/bikelogo" />
+                </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/detaillinear"
+                        android:layout_below="@+id/signup_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Dimentation (in cm)"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <EditText
+                                android:id="@+id/dimensionTextheight"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:hint="Height"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLines="4"
+                                android:padding="5dp"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                style="@style/Base.TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="x"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:textAlignment="center" />
+
+                            <EditText
+                                android:id="@+id/dimensionTextwidth"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/edit_box_blue_border"
+                                android:hint="Width"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLines="4"
+                                android:padding="5dp"
+                                android:textAlignment="center" />
+                            <TextView
+                                style="@style/Base.TextAppearance.AppCompat.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="x"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:textAlignment="center" />
+
+                            <EditText
+                                android:id="@+id/dimensionTextLength"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/edit_box_blue_border"
+                                android:hint="Length"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLines="4"
+                                android:padding="5dp"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+
+                        <!-- <View
+                             android:layout_marginTop="@dimen/_5sdp"
+                             android:id="@+id/view"
+                             android:layout_width="match_parent"
+                             android:layout_height="1dp"
+                             android:background="@color/dividerColor" />-->
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Remark"
+
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/remarkText"
+                            style="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:background="@null"
+                            android:hint="Enter Remark"
+                            android:imeOptions="actionDone"
+                            android:padding="5dp" />
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary" />
+
+
+                        <Button
+                            android:id="@+id/btnSave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            style="@style/Base.TextAppearance.AppCompat.Title"
+                            android:text="save"
+                            android:background="@drawable/signin_btn"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
