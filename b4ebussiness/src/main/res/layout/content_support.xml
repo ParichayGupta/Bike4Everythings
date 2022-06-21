@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bike4everythingbussiness.Activity.SupportActivity"
+    tools:showIn="@layout/activity_support">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/messageTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_message_black_24dp"
+                android:textSize="20dp"
+                android:text="Enquire"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/callTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ic_call_black_24dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Call"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/callView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/supportimg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Customer care\nTime : 9AM - 12PM"/>
+        </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9755299999"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:autoLink="phone"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/signup_btn"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/messageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="You have a any query please enter below"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Subject"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/subjectTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter subject"
+                android:singleLine="true"
+                android:background="@drawable/edit_box_blue_border"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Message"
+                android:textColor="@color/colorPrimary"/>
+            <EditText
+                android:id="@+id/messageTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter message"
+                android:lines="6"
+                android:gravity="left|top"
+                android:background="@drawable/edit_box_blue_border"/>
+
+            <Button
+                android:id="@+id/sendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="send"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:background="@drawable/signin_btn"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

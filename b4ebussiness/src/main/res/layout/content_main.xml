@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bike4everythingbussiness.Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/schedule_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="Schedule Delivery"/>
+
+        <TextView
+            android:id="@+id/scheduleTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:text="ssd"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_place_green_24dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="PICKUP FROM"/>
+
+        <TextView
+            android:id="@+id/pickup_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:text=""/>
+
+        <LinearLayout
+            android:id="@+id/pickupaddressList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/picupRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/addpickupaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="+ Add New Address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/signin_btn"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:drawableLeft="@drawable/ic_place_red_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="DELIVER TO"/>
+            <TextView
+                android:id="@+id/stopCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:text=""/>
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dropRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        <Button
+            android:id="@+id/addanotherstop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Add Another Stop"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/signup_btn"/>
+        </LinearLayout>
+
+        <include layout="@layout/drop_address_view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_content_paste_black_24dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="NOTES"/>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:hint="Any special instructions for us"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blackshad"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/returnRequired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="RETURN REQUIRED?"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:text="ESTIMATED FARE"/>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:id="@+id/estfare_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/signin_btn"
+                    android:textColor="@color/white"
+                    android:text="View"/>
+                <ProgressBar
+                    android:id="@+id/estfare_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/whiteshadetrans"
+        android:gravity="center_horizontal">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_motorcycle_black_24dp" />
+    </LinearLayout>
+</RelativeLayout>

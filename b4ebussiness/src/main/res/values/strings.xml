@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Bike4EverythingBussiness</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">SIGN UP</string>
+    <string name="title_activity_signin">SIGN IN</string>
+    <string name="termsofuse"><a href="http://bussiness.bike4everything.in/">Terms of Use </a></string>
+    <string name="title_activity_forgot_pass">FORGOT PASSWORD</string>
+    <string name="title_activity_main">NEW DELIVERY</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_pickup_address">PICKUP DETAILS</string>
+    <string name="title_activity_otp">VERIFICATION</string>
+    <string name="title_activity_deliveries">DELIVERIES</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_rate_card">Rate Card</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="title_activity_paytm_wallet">Paytm Wallet</string>
+    <string name="title_activity_add_wallet">Add Wallet</string>
+    <string name="title_activity_delivery_details">Delivery Details</string>
+    <string name="title_activity_support">Support</string>
+</resources>

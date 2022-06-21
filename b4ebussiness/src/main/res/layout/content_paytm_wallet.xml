@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bike4everythingbussiness.Activity.PaytmWalletActivity"
+    tools:showIn="@layout/activity_paytm_wallet">
+
+    <LinearLayout
+        android:id="@+id/mobileView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:textSize="16dp"
+            android:text="Request an OTP to link Paytm Wallet to"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:hint="8269XXXXXX"/>
+
+        <Button
+            android:id="@+id/requestOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Otp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signin_btn"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/OtpView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Sending OTP To"/>
+
+        <TextView
+            android:id="@+id/mobileTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="8269XXXXXX"/>
+
+
+        <EditText
+            android:id="@+id/Otp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:hint="Enter OTP"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signin_btn"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/resendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend Otp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signin_btn"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

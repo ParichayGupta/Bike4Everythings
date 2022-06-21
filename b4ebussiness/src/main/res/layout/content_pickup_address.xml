@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bike4everythingbussiness.Activity.PickupAddressActivity"
+    tools:showIn="@layout/activity_pickup_address">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorPrimary"
+        android:text="ADDRESS *"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_box"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:editable="false"
+        android:clickable="true"
+        android:inputType="textCapWords"
+        android:hint="Search Location"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorPrimary"
+        android:text="ADDRESS NICKNAME *"/>
+    <EditText
+        android:id="@+id/addressName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_box"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:hint="For ex. Work, Home"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorPrimary"
+        android:text="CONTACT NAME *"/>
+    <EditText
+        android:id="@+id/contactname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_box"
+        android:hint="Your Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorPrimary"
+        android:text="PHONE NUMBER *"/>
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:background="@drawable/edit_box"
+        android:hint="99xxxxxxxx"/>
+
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:text="SAVE"/>
+</LinearLayout>

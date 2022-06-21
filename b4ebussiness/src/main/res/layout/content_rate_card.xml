@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bike4everythingbussiness.Activity.RateCardActivity"
+    tools:showIn="@layout/activity_rate_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/basefareExpand1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/basefareTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:text="BASE FARE"/>
+                    <TextView
+                        android:id="@+id/forkms"
+                        android:layout_below="@+id/basefareTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="for 5 kms"/>
+
+                    <ImageButton
+                        android:id="@+id/basefareExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+                </RelativeLayout>
+
+
+                    <TableLayout
+                        android:id="@+id/basefareDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Time slot"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Fare"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/timeslot"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="12:00 am - 11:59 pm"/>
+                            <TextView
+                                android:id="@+id/basefare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="30"/>
+                        </TableRow>
+                    </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/perkmExpand1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/perkmTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:text="PER KM"/>
+                    <TextView
+                        android:id="@+id/afterkms"
+                        android:layout_below="@+id/perkmTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="after 5 kms"/>
+
+                    <ImageButton
+                        android:id="@+id/perkmExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+                </RelativeLayout>
+
+                    <TableLayout
+                        android:id="@+id/perkmDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Range (in km)"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Per km fare"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/rangekmfare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="5 and above"/>
+                            <TextView
+                                android:id="@+id/perkmfare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="8"/>
+                        </TableRow>
+                    </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/perdeliveryExpand1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/perDeliveryTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:text="PER DELIVERY"/>
+                    <TextView
+                        android:id="@+id/additionaltxt"
+                        android:layout_below="@+id/perDeliveryTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="(for additional)"/>
+
+                    <ImageButton
+                        android:id="@+id/perdeliveryExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+                </RelativeLayout>
+
+                    <TableLayout
+                        android:id="@+id/perdeliveryDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:padding="10dp">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="#Deliveries"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/table_row_header"
+                                android:textColor="@color/colorPrimary"
+                                android:padding="15dp"
+                                android:text="Per Delivery fare"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+                            <TextView
+                                android:id="@+id/deliveriesrange"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="2 - 4"/>
+                            <TextView
+                                android:id="@+id/deliveryfare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:textColor="@color/black"
+                                android:text="10"/>
+                        </TableRow>
+                    </TableLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/gray"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:text="- Return fare if applicable"/>
+                <TextView
+                    android:id="@+id/returnfare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Rs.10 per/delivery"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- GST rate are additional in fare"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
