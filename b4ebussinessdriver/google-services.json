@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "770056963031",
+    "firebase_url": "https://bike4everything-6c32c.firebaseio.com",
+    "project_id": "bike4everything-6c32c",
+    "storage_bucket": "bike4everything-6c32c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770056963031:android:c52c8b0abe684ad5",
+        "android_client_info": {
+          "package_name": "com.b4ebusinessdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770056963031-oo4s8gol6v8mppepbe81jarjfp9tc756.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwQTEQz_Wc688xdrHkCyHrgOWhLQb9oyY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
