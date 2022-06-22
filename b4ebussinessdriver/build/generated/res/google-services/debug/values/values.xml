@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">770056963031-oo4s8gol6v8mppepbe81jarjfp9tc756.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bike4everything-6c32c.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">770056963031</string>
+    <string name="google_api_key" translatable="false">AIzaSyAwQTEQz_Wc688xdrHkCyHrgOWhLQb9oyY</string>
+    <string name="google_app_id" translatable="false">1:770056963031:android:c52c8b0abe684ad5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAwQTEQz_Wc688xdrHkCyHrgOWhLQb9oyY</string>
+    <string name="google_storage_bucket" translatable="false">bike4everything-6c32c.appspot.com</string>
+    <string name="project_id" translatable="false">bike4everything-6c32c</string>
+</resources>
