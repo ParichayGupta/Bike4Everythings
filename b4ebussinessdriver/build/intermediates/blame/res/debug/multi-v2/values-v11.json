@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Zip\\Bike4Everythings\\b4ebussinessdriver\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yashv\\.gradle\\caches\\transforms-2\\files-2.1\\7707b8ed0a7e5034ce36712c221de484\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "182",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "265"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "12",
+                        "endOffsets": "138"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yashv\\.gradle\\caches\\transforms-2\\files-2.1\\f553699caf4c6db49f906330e14bdf3c\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "143",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "264"
+                    }
+                }
+            ]
+        }
+    ]
+}
