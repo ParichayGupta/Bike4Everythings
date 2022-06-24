@@ -1,0 +1,4 @@
+# Referenced at E:\Zip\Bike4Everythings\b4ebussinessdriver\build\intermediates\merged_manifests\debug\AndroidManifest.xml:50
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\Zip\Bike4Everythings\b4ebussinessdriver\build\intermediates\merged_manifests\debug\AndroidManifest.xml:50
+-keep class com.b4ebusinessdriver.MyApplication { <init>(); }

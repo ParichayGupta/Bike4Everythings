@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.b4ebusinessdriver"
+    android:targetSandboxVersion="2"
+    android:versionCode="19"
+    android:versionName="1.9" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.CALL_PHONE" />
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <permission
+        android:name="com.b4edriver.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bike4everything.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.bike4everything.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.b4ebusinessdriver.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.SplashActivity"
+            android:label="BIKER" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.b4ebusinessdriver.Reciver.NotificationReceiver" >
+            <intent-filter>
+                <action android:name="Accept" />
+                <action android:name="Reject" />
+                <action android:name="Login" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.b4ebusinessdriver.Reciver.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.b4ebusinessdriver.Services.OwnPushService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.b4ebusinessdriver.Services.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.b4ebusinessdriver.Services.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATDVifYGbH8bO0HKlaVBk8lYiWUq1ausk" />
+        -->
+
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.HomeActivity"
+            android:label="BUSINESS"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.SigninActivity"
+            android:label="@string/title_activity_signin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.ForgotPassActivity"
+            android:label="@string/title_activity_forgot_pass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.OrderDetailActivity"
+            android:label="@string/title_activity_forgot_pass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.EndTripActivity"
+            android:label="@string/title_activity_end_trip"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.AlertActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_alert"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.UserDialog" />
+
+        <service
+            android:name="com.b4ebusinessdriver.Services.DetectedActivitiesIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.b4ebusinessdriver.Services.SyncDBService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.DeliveriesActivity"
+            android:label="@string/title_activity_deliveries"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.b4ebusinessdriver.DistanceCalculate.DriverLocationUpdateService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":DriverLocationUpdateService" />
+
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.DriverLocationUpdateAlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.b4ebusinessdriver.DistanceCalculate.SEND_LOCATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.DriverServiceRestartReceiver" >
+            <intent-filter>
+                <action android:name="com.b4ebusinessdriver.DistanceCalculate.RESTART_SERVICE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.LocationReceiverDriver" />
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.ActivityReceiverDriver" />
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.FusedLocationReceiverBackgroundBalanced" />
+        <receiver android:name="com.b4ebusinessdriver.DistanceCalculate.FusedLocationReceiverBackgroundHigh" />
+
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.b4ebusinessdriver.Activity.NewOrderActivity"
+            android:label="@string/title_activity_new_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.b4ebusinessdriver.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="com.b4edriver.CommonClasses.Utils.FileProvider"
+            android:authorities="com.b4edriver.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.b4edriver.DriverApp.NavigationDrawerDriver"
+            android:label="@string/driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="com.b4edriver.Citrus.PaytmTransactionActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.CreateRoutesServices"
+            android:exported="false" /> <!-- <service android:name="com.bike4everything.GCM.GCMNotificationIntentService" /> -->
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.AlarmServicesDriver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.b4edriver.DriverApp.RecieptActivityDriver"
+            android:label="@string/title_activity_reciept"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.ProfileActivityDriver"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.ThankyouActivityDriver"
+            android:label="@string/title_activity_thankyou"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name="com.android.camera.CropImage" /> -->
+        <activity
+            android:name="com.b4edriver.DriverApp.NotificationActivityDriver"
+            android:label="@string/title_activity_notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.NotificationDialogActivity"
+            android:label="New Trip"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripAcceptActivityDriver"
+            android:label="@string/title_activity_trip_accept"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TaxiWaitingActivityDriver"
+            android:label="@string/title_activity_taxi_waiting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripStartedActivityDriver"
+            android:label="@string/title_activity_trip_started"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripDetailActivityDriver"
+            android:label="@string/new_trip"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.MyTripRideActivityDriver"
+            android:label="@string/title_activity_trip_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.DialogActivityDriver"
+            android:label=""
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name="com.b4edriver.DriverApp.AllMessageActivityDriver"
+            android:label="@string/title_activity_all_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.SelectServicesActivityDriver"
+            android:label="@string/title_activity_select_services"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="69e0ee885755f754ebeff03181c17b9cdc50ed02" />
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.LocationReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.b4edriver.action.LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.b4edriver.DriverApp.ItemDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.NetworkReciver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.DetectedActivitiesIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.WorkTimerService"
+            android:exported="true" />
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.FusedLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.b4edriver.DriverApp.LoginTimeActivity"
+            android:label="@string/title_activity_login_time"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+
+        <service
+            android:name="com.b4edriver.DistanceCalculate.DriverLocationUpdateService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":DriverLocationUpdateService" />
+
+        <receiver android:name="com.b4edriver.DistanceCalculate.DriverLocationUpdateAlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.bike4everything.DistanceCalculate.SEND_LOCATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4edriver.DistanceCalculate.DriverServiceRestartReceiver" >
+            <intent-filter>
+                <action android:name="com.bike4everything.DistanceCalculate.RESTART_SERVICE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4edriver.DistanceCalculate.LocationReceiverDriver" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.ActivityReceiverDriver" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.FusedLocationReceiverBackgroundBalanced" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.FusedLocationReceiverBackgroundHigh" /> <!-- new driver -->
+        <activity
+            android:name="com.b4edriver.b4edrivers.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.b4edriver.b4edrivers.HostoryActivity"
+            android:label="@string/title_activity_hostory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.b4edrivers.DeatilsActivity"
+            android:label="@string/title_activity_deatils"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.b4edriver.RentalBike.RentRequestActivityOld"
+            android:label="@string/title_activity_rent_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.MySMSBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.b4edriver.GCM.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.b4edriver.GCM.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+        <activity android:name="com.b4elibrary.MainActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
+
+        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity android:name="com.facebook.CustomTabActivity" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:exported="true"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.b4ebusinessdriver" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.b4ebusinessdriver.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
+            android:name="com.facebook.marketing.internal.MarketingInitProvider"
+            android:authorities="com.b4ebusinessdriver.MarketingInitProvider"
+            android:exported="false" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.b4ebusinessdriver.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+            android:exported="false" />
+        <service
+            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+            android:exported="false" />
+        <service
+            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
