@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.b4ebusinessdriver.Activity.SplashActivity"
+    android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/splashscreen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/add_view"
+                layout="@layout/add_bottom" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/blackshad"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:padding="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="DRIVER"/>
+
+        </RelativeLayout>
+
+    <com.b4ebusinessdriver.Widgets.SignInView
+        android:id="@+id/signinview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.b4ebusinessdriver.Widgets.SignInView>
+
+
+    <LinearLayout
+        android:id="@+id/wifisignel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="40dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_signal_wifi_off_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="No Internet Connection"/>
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup_btn"
+            android:textColor="@color/black"
+            android:text="Refresh"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
