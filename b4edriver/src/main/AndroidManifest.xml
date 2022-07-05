@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.b4edriver">
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.b4edriver.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bike4everything.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:usesCleartextTraffic="true">
+
+
+        <activity
+            android:name="com.b4edriver.DriverApp.NavigationDrawerDriver"
+            android:label="@string/driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity android:name="com.b4edriver.Citrus.PaytmTransactionActivity"></activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value" />
+
+
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.CreateRoutesServices"
+            android:exported="false" />
+
+
+        <!-- <service android:name="com.bike4everything.GCM.GCMNotificationIntentService" /> -->
+
+
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.AlarmServicesDriver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.b4edriver.DriverApp.RecieptActivityDriver"
+            android:label="@string/title_activity_reciept"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.ProfileActivityDriver"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.ThankyouActivityDriver"
+            android:label="@string/title_activity_thankyou"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity android:name="com.android.camera.CropImage" /> -->
+        <activity
+            android:name="com.b4edriver.DriverApp.NotificationActivityDriver"
+            android:label="@string/title_activity_notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.NotificationDialogActivity"
+            android:label="New Trip"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripAcceptActivityDriver"
+            android:label="@string/title_activity_trip_accept"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TaxiWaitingActivityDriver"
+            android:label="@string/title_activity_taxi_waiting"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripStartedActivityDriver"
+            android:label="@string/title_activity_trip_started"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.TripDetailActivityDriver"
+            android:label="@string/new_trip"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.MyTripRideActivityDriver"
+            android:label="@string/title_activity_trip_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.DialogActivityDriver"
+            android:label=""
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name="com.b4edriver.DriverApp.AllMessageActivityDriver"
+            android:label="@string/title_activity_all_message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.DriverApp.SelectServicesActivityDriver"
+            android:label="@string/title_activity_select_services"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="69e0ee885755f754ebeff03181c17b9cdc50ed02" />
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.LocationReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.b4edriver.action.LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.b4edriver.DriverApp.ItemDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|keyboard"/>
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.NetworkReciver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.DetectedActivitiesIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.WorkTimerService"
+            android:exported="true" />
+        <service
+            android:name="com.b4edriver.CommonClasses.Services.FusedLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.b4edriver.DriverApp.LoginTimeActivity"
+            android:label="@string/title_activity_login_time"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+
+
+        <service
+            android:name="com.b4edriver.DistanceCalculate.DriverLocationUpdateService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":DriverLocationUpdateService" />
+
+        <receiver android:name="com.b4edriver.DistanceCalculate.DriverLocationUpdateAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.bike4everything.DistanceCalculate.SEND_LOCATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4edriver.DistanceCalculate.DriverServiceRestartReceiver">
+            <intent-filter>
+                <action android:name="com.bike4everything.DistanceCalculate.RESTART_SERVICE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.b4edriver.DistanceCalculate.LocationReceiverDriver" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.ActivityReceiverDriver" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.FusedLocationReceiverBackgroundBalanced" />
+        <receiver android:name="com.b4edriver.DistanceCalculate.FusedLocationReceiverBackgroundHigh" /> <!-- new driver -->
+        <activity
+            android:name="com.b4edriver.b4edrivers.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+
+        <activity
+            android:name="com.b4edriver.b4edrivers.HostoryActivity"
+            android:label="@string/title_activity_hostory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.b4edriver.b4edrivers.DeatilsActivity"
+            android:label="@string/title_activity_deatils"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".RentalBike.RentRequestActivityOld"
+            android:label="@string/title_activity_rent_request"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.b4edriver.CommonClasses.BroadCastReceivers.MySMSBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".GCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" />
+    </application>
+
+</manifest>
