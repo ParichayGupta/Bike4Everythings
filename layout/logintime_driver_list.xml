@@ -1,0 +1,152 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent_black"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white">
+    <!--        android:layout_marginTop="@dimen/heading"  -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/trip_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:text="Date : "
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/mDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="10-12-2017"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mloginDurationLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/trip_ll"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:text="Login duration : "
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/mloginDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="00:12:10"
+                />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/mloginDurationLL"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black_overlay"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/address_ll"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Login time"
+                    android:typeface="monospace"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/mLoginTime"
+                    android:typeface="serif"
+                    android:text="11:10 AM" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:text="Logout time"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/mLogoutTime"
+                    android:typeface="serif"
+                    android:text="12:00 PM" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

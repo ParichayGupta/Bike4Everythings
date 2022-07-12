@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_root"
+    android:background="@drawable/dialog_box_driver"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Bike4Everything"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cancel"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/countTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"
+            android:typeface="monospace"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_message"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:visibility="gone">
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="3 Min"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Min"/>
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Min"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Min"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:hint="Enter mobile no. here"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/yellow_light"
+        android:text="SUBMIT"/>
+</LinearLayout>

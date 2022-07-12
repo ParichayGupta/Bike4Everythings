@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/white_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_notification_driver"
+    tools:context="com.b4edriver.DriverApp.NotificationActivityDriver">
+
+    <TextView
+        android:id="@+id/header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/heading"
+        android:background="@color/colorPrimary"
+        android:text="History"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/notify_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:dividerHeight="4dp">
+
+    </ListView>
+
+</RelativeLayout>

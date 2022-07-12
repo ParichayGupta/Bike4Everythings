@@ -1,0 +1,224 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_below="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucent_black"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="0dp"
+    app:cardBackgroundColor="@color/white">
+    <!--        android:layout_marginTop="@dimen/heading"  -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/trip_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:text="@string/tripid"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/flagg"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/trip_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="1"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/trip_ll"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/address_ll"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/source_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/source_address"
+                    android:typeface="monospace"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/source"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/source_address_tv"
+                    android:typeface="serif"
+                    android:text="source adddress" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desti_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:text="@string/destination_address"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/destintn"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/destination_address_tv"
+                    android:typeface="serif"
+                    android:text="destination adddress" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_below="@+id/address_ll"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/datetime_ll"
+            android:layout_below="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/calendar"
+                    android:typeface="monospace"
+                    android:gravity="center_vertical"
+                    android:text="@string/pickup_date_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pickup_datetime_tv"
+                    android:layout_marginTop="10dp"
+                    android:typeface="serif"
+                    android:layout_below="@+id/address_ll"
+                    android:layout_toRightOf="@+id/fare"
+                    android:paddingLeft="@dimen/text_left_padding"
+                    android:text="12"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fare"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    android:textColor="@color/black"
+                    android:text="Approx Fare" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fare_tv"
+                    android:textColor="@color/black"
+                    android:background="@drawable/fare_bg_driver"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/address_ll"
+                    android:layout_toRightOf="@+id/fare"
+                    android:text="Rs.\n12/-"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/status_tv"
+                    android:layout_below="@+id/datetime_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_white_bg_driver"
+                    android:gravity="center_vertical"
+                    android:typeface="monospace"
+                    android:paddingLeft="@dimen/btn_detail_padding_left"
+                    android:paddingRight="@dimen/btn_detail_padding_left"
+                    android:textSize="@dimen/btn_text_size"
+                    android:textStyle="bold"
+                    android:text="@string/accept"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

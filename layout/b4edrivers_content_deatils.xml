@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DeatilsActivity"
+    tools:showIn="@layout/b4edrivers_activity_deatils">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tripId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/raleway_extrabold"
+            android:textColor="@color/colorPrimary"
+            android:text="#12334"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Start to Reached Restaurant"
+                android:textSize="18dp"
+                app:fontFamily="@font/raleway_extrabold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/part1_img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <ImageView
+                    android:id="@+id/part1_img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Distance by Google"
+                    app:fontFamily="@font/raleway_medium" />
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/part1_googlekm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/raleway_extrabold"
+                    android:text="15 km"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:fontFamily="@font/raleway_medium"
+                    android:text="Calculated Distance by Bike"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/part1_meterkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 km"
+                    app:fontFamily="@font/raleway_extrabold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                app:fontFamily="@font/raleway_extrabold"
+                android:text="Start Delivery to End Delivery"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/part2_img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <ImageView
+                    android:id="@+id/part2_img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:fontFamily="@font/raleway_medium"
+                    android:text="Distance by Google"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/part2_googlekm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 km"
+                    app:fontFamily="@font/raleway_extrabold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:fontFamily="@font/raleway_medium"
+                    android:text="Calculated Distance by Bike"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:id="@+id/part2_meterkm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 km"
+                    app:fontFamily="@font/raleway_extrabold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/tripamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/trip_amount_for_b4e"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

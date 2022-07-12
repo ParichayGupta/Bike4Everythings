@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/signup_image"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edit_box"
+                    android:layout_height="240dp">
+
+
+                    <ImageView
+                        android:id="@+id/img_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bikelogo" />
+                </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_below="@+id/signup_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <EditText
+                                android:id="@+id/meterReading"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:hint="Enter meter reading "
+                                style="@style/TextAppearance.AppCompat.Small"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberDecimal"
+                                android:padding="10dp" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <EditText
+                            android:id="@+id/remarkText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_box_blue_border"
+                            android:hint="Enter Remark"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapWords"
+                            android:layout_marginLeft="5dp"
+                            android:padding="10dp" />
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_box_blue_border"
+                            android:hint="Enter Address"
+                            android:imeOptions="actionDone"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="textCapWords"
+                            android:visibility="gone"
+                            android:padding="10dp" />
+
+                        <LinearLayout
+                            android:id="@+id/paymetmodeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+                            <RadioGroup
+                                android:id="@+id/paymetmode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <RadioButton
+                                    style="@android:style/Widget.CompoundButton.CheckBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:scaleX="0.7"
+                                    android:scaleY="0.7"
+                                    android:text="Paid"/>
+                                <RadioButton
+                                    style="@android:style/Widget.CompoundButton.CheckBox"
+                                    android:id="@+id/cash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-10dp"
+                                    android:textColor="@color/black"
+                                    android:scaleX="0.7"
+                                    android:scaleY="0.7"
+                                    android:text="COD"/>
+                            </RadioGroup>
+                            <EditText
+                                android:id="@+id/cashamount"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="30dp"
+                                style="@style/TextAppearance.AppCompat.Small"
+                                android:background="@drawable/edit_box_blue_border"
+                                android:hint="Enter Amount"
+                                android:inputType="numberDecimal"
+                                android:padding="10dp"
+                                android:visibility="gone"/>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnclose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_box"
+                    android:textColor="@color/white"
+                    android:text="CLOSE" />
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_box"
+                    android:textColor="@color/white"
+                    android:text="SUBMIT" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
