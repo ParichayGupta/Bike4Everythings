@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">B4E On-Demand</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="title_activity_reciept">Receipt</string>
+
+    <string name="driver">BIKER</string>
+
+
+    <string name="nav_become_user">SWITCH AS USER</string>
+
+
+    <!--
+
+    1> i am in truble please help
+    2. other (open edit text).
+
+    remove trip complete
+    -->
+
+
+    <!-- <string name="place_details">
+    <![CDATA[
+    <b>%1$s</b>
+    <br/>
+    <i>Place Id: %2$s</i>
+    <br/>
+            Address: %3$s
+    <br/>
+            Phone: %4$s
+    <br/>
+            Website: %5$s
+        ]]>
+    </string>-->
+
+
+    <!--//>>>>>/??????????-->
+
+    <string name="date_time"><![CDATA[-: Date & Time :-]]></string>
+
+    <string name="title_activity_profile">PROFILE</string>
+    <string name="title_activity_thankyou">THANK YOU</string>
+
+
+    <string name="sorry_no_data_found">Sorry no data found</string>
+    <string name="message_after_anyone_registered_as_driver">Thank you applying to become biker with us, your application is submitted and we would review it.Once the review of the application is completed and if you qualify our eligibilitycriterion we would approve your application and would send you the notification regarding the same.</string>
+
+    <string name="title_activity_trip_history">Trip History</string>
+
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+
+    <string name="trip_rejected">Choose the reason why the trip was rejected</string>
+
+    <string name="title_activity_trip_accept">Trip Accepted</string>
+
+    <string name="send_message">Send Message</string>
+    <string name="all_message">Received Messages</string>
+    <string name="send">SEND</string>
+    <string name="cancel">Cancel</string>
+    <string name="arrived">Arrived</string>
+
+
+    <string name="title_activity_notification">Notification</string>
+
+    <string name="title_activity_taxi_waiting">Biker Waiting</string>
+
+    <string name="boarded">Boarded</string>
+    <string name="call_client">Call Customer</string>
+    <string name="title_activity_trip_started">Trip Started</string>
+    <string name="pickup_info">Pickup Information</string>
+    <string name="drop_info">Drop Information</string>
+    <string name="destination_info">Destination Information</string>
+
+    <string name="other">Other</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="server_not_response">Server is not Responding Right Now, please retry after some time </string>
+    <string name="error_check_internet_connection">Please Check your internet Connection</string>
+    <string name="error_retry_after_sometime">Please retry after some time, currently server is not responding.</string>
+    <string name="name">Name :</string>
+    <string name="number">Number :</string>
+    <string name="address">Address :</string>
+
+    <string name="source_address">Source - </string>
+    <string name="destination_address">Destination - </string>
+
+    <string name="new_trip">NEW TRIP</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+    <string name="cancel_trip">Cancel Trip</string>
+
+    <string name="discard">Discard</string>
+
+    <string name="client_is_not_here">The customer is not here</string>
+    <string name="client_is_not_answering">The customer does not respond</string>
+    <string name="address_does_not_exist">The address does not exist</string>
+
+    <string name="tripid">Trip Id - </string>
+
+    <string name="title_activity_updates">Update</string>
+
+
+    <string name="nav_activity">HOME</string>
+    <string name="nav_triphistory">TRIP HISTORY</string>
+    <string name="nav_myprofile">MY PROFILE</string>
+    <string name="nav_notification">NOTIFICATION</string>
+    <string name="nav_logintime">Login Time</string>
+    <string name="nav_logout">LOGOUT</string>
+    <string name="exit_message">Do you want to exit ?</string>
+    <string name="exit">Exit!</string>
+
+    <string name="pickup_date_time"><![CDATA[Pickup Date/Time]]></string>
+
+    <string name="five_min_late_traffic">I will be 5 minutes late because of traffic</string>
+    <string name="i_am_in_truble_please_help">I am in trouble please help</string>
+    <string name="cant_find_address">I cannot find the address, Call me</string>
+    <string name="thanksyou">Thank you</string>
+
+    <string name="title_activity_select_services">Select The Services</string>
+
+
+    <!--DRIVER PART-->
+
+
+    <string name="nav_offline">SEND YOUR LOCATION</string>
+
+    <string name="title_activity_all_message">All Messages</string>
+    <string name="canceled_trip_by_user">Canceled trips by user.</string>
+    <string name="item_details">Item Details</string>
+    <string name="gps_alert">Location Alert - Your Location is not getting updated, Please check your GPS.</string>
+
+
+    <!-- Activity detection strings -->
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown activity</string>
+    <string name="walking">Walking</string>
+    <string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+
+    <string name="not_connected">GoogleApiClient not yet connected. Try again.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_login_time">Login Time</string>
+
+
+    <string name="title_activity_main">Delivery App</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="reached_trip">Reached Restaurant</string>
+    <string name="start_delivery">Start Delivery</string>
+    <string name="end_delivery">End Delivery</string>
+    <string name="msg1">You are on the way to pick delivery from \"%1$s\", Press "Reached Restaurant" button once you reach. Thanks</string>
+    <string name="msg2">You are on delivery of \"%1$s\", Kindly press "Start Delivery" button to start the delivery. \n\n <u><b>TAKE BILL IMAGE</b></u></string>
+    <string name="msg3">You are on delivery of \"%1$s\", kindly deliver the order ASAP.</string>
+    <string name="title_activity_hostory">History</string>
+    <string name="title_activity_deatils">Deatils</string>
+    <string name="trip_amount_for_b4e">Trip Amount for B4E ₹ %1$s</string>
+    <string name="trip_amount_for_bike">Trip Amount for Bike ₹ %1$s</string>
+    <string name="title_activity_rent_request">Rental Bike</string>
+</resources>

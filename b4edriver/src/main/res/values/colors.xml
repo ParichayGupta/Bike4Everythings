@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01458E</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimaryDark">#01458E</color>
+    <color name="colorAccent">#01458E</color>
+
+    <color name="green">#d2764e</color>
+    <color name="red">#ff0000</color>
+    <color name="green_bike">#F4C203</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#90ffffff</color>
+	<color name="black_overlay">#66000000</color>
+    <color name="translucent_black">#80f19e9e</color>
+    <color name="white_light">#aaffffff</color>
+    <color name="yellow_light">#ffd200</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#aa000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="screen_bg">#eae8ea</color>
+    <color name="screen_bg_gray">#e2e2e2</color>
+    <color name="progress_hud_bg">#99000000</color>
+
+    <!--    <color name="popup_bg_color">#EE666666</color>
+    <color name="separator_color">#BBBBBB</color>
+    <color name="popup1_text_color">#FFFFFF</color>
+        <color name="btn_pressed">#ff33b5e5</color>
+        <color name="btn_focused">#ff0099cc</color>
+        <color name="btn_normal">#00000000</color>-->
+
+    <color name="btn_bg">#f8c300</color>
+    <color name="btn_create_account">#ffcc2a</color>
+
+
+</resources>
