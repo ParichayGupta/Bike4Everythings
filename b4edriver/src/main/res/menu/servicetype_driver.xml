@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="driverregistration.bikefoureverthing.com.bike4everything.MainActivity" >
+
+    <item
+        android:id="@+id/select"
+        android:orderInCategory="100"
+        android:title="done"
+        android:icon="@drawable/tick"
+        app:showAsAction="always" />
+
+</menu>

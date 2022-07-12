@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/nav_activity" />
+
+        <item
+            android:id="@+id/nav_offline"
+            android:icon="@drawable/ic_action_bell"
+            android:title="@string/nav_offline" />
+
+
+        <item
+            android:id="@+id/nav_trip_history"
+            android:icon="@drawable/ic_action_clock"
+            android:title="@string/nav_triphistory" />
+
+        <item
+            android:id="@+id/action_history"
+            android:icon="@drawable/ic_action_clock"
+            android:title="Delivery history" />
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_action_user"
+            android:title="@string/nav_myprofile" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_action_bell"
+            android:title="@string/nav_notification" />
+        <item
+            android:id="@+id/nav_logintime"
+            android:icon="@drawable/time"
+            android:title="@string/nav_logintime" />
+        <item
+            android:id="@+id/nav_helpdesk"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Help Desk" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_action_lock_closed"
+            android:title="@string/nav_logout" />
+    </group>
+
+
+</menu>
