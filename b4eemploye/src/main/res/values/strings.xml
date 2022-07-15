@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">B4E EMP</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_booking">Allot Booking</string>
+    <string name="tab_text_1">Booking</string>
+    <string name="tab_text_2">Running</string>
+    <string name="tab_text_3">Completed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_issue">Booking Issued</string>
+    <string name="select_bike">Seletct Bike</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="label_server">Server</string>
+    <string name="label_info">This screen will be shown only once. After you click the button, server address will be
+        saved in preferences. To change it, clear app data from application manager.
+    </string>
+    <string name="button_start">Start</string>
+    <string name="error_connection">Server connection failed</string>
+    <string name="file_browser">File Browser</string>
+    <string name="notification_channel">Default</string>
+    <string name="title_activity_track_bike">TrackBike</string>
+
+    <string name="app_login">Login</string>
+    <string name="app_loading">Loading…</string>
+
+    <string name="shared_second">Second</string>
+    <string name="shared_minute">Minute</string>
+    <string name="shared_hour">Hour</string>
+
+    <string name="error_general">Server request error</string>
+    <string name="error_invalid_url">Invalid server URL</string>
+    <string name="error_invalid_frequency">Frequency must be a valid number</string>
+
+    <string name="devices_title">Devices</string>
+    <string name="send_command_title">Send command</string>
+    <string name="settings_title">Settings</string>
+    <string name="logout_title">Logout</string>
+
+    <string name="settings_url">Server</string>
+    <string name="settings_email">Email</string>
+    <string name="settings_password">Password</string>
+
+    <string name="user_kn">kn</string>
+    <string name="user_kmh">km/h</string>
+    <string name="user_mph">mph</string>
+
+    <string name="position_time">Time</string>
+    <string name="position_latitude">Latitude</string>
+    <string name="position_longitude">Longitude</string>
+    <string name="position_speed">Speed</string>
+    <string name="position_altitude">Altitude</string>
+    <string name="position_course">Course</string>
+
+    <string name="action_show_on_map">Show on map</string>
+    <string name="action_send_command">Send command</string>
+
+    <string name="command_command">Command</string>
+    <string name="command_frequency_frequency">Frequency</string>
+    <string name="command_frequency_unit">Unit</string>
+    <string name="command_send">Send</string>
+    <string name="command_sent">Command has been sent</string>
+
+    <string name="command_alarm_arm">Arm</string>
+    <string name="command_alarm_disarm">Disarm</string>
+    <string name="command_engine_stop">Engine Stop</string>
+    <string name="command_engine_resume">Engine Resume</string>
+    <string name="command_position_periodic">Periodic Reporting</string>
+    <string name="command_frequency">Frequency</string>
+</resources>
