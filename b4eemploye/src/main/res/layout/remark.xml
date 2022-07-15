@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:text="Remark"/>
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:padding="@dimen/_5sdp"
+            android:hint="Enter remark here"
+            android:background="@drawable/black_border_box"/>
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="right"
+            android:theme="@style/MyButton1"
+            android:textColor="@color/white"
+            android:text="Submit"/>
+
+
+</LinearLayout>

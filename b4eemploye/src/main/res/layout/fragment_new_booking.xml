@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:background="#eaedf1"
+        tools:context=".activity.BookingActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@+id/pullToRefresh" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            <ImageView android:id="@+id/norecordfound" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:background="@color/white"
+                    android:src="@drawable/norecordfound" android:alpha="0"
+                    android:padding="@dimen/_20sdp" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>

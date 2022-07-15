@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/white"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".activity.IssueActivity"
+tools:showIn="@layout/activity_issue">
+
+<LinearLayout
+    android:id="@+id/form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Customer Image"
+                android:textColor="@color/colorPrimary" />
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_2sdp">
+                <ImageView
+                    android:id="@+id/customerImage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/ic_perm_identity_black_24dp"/>
+                <ProgressBar
+                    android:id="@+id/progressBarCImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/customerImageSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:background="@drawable/green_border_box"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="select"/>
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="ID Proof"/>
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_2sdp">
+                <ImageView
+                    android:id="@+id/idProof"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/ic_id_proof"/>
+                <ProgressBar
+                    android:id="@+id/progressBarIDProof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/idProofSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:background="@drawable/green_border_box"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="select"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="Vide Clip"/>
+            <RelativeLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_2sdp">
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/ic_id_proof"/>
+                <ImageView
+                    android:id="@+id/playVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_media_play"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/videoSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:background="@drawable/green_border_box"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="select"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:textColor="@color/colorPrimary"
+        android:text="Customer Name*"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:inputType="textCapWords"
+        android:hint="Enter Customer Name"
+        android:background="@drawable/black_border_box"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:text="Contact Number*"/>
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:padding="@dimen/_5sdp"
+        android:hint="Enter Contact Number"
+        android:background="@drawable/black_border_box"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:text="Driver’s Licence*"/>
+    <EditText
+        android:id="@+id/etLicence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:padding="@dimen/_5sdp"
+        android:hint="Enter Driver’s Licence"
+        android:background="@drawable/black_border_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:textColor="@color/colorPrimary"
+        android:text="Bike Number"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/bikenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        android:hint="Enter Bike Number"
+        android:background="@drawable/black_border_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/raleway_medium"
+        android:textColor="@color/colorPrimary"
+        android:text="Check List *"/>
+
+    <CheckBox
+        android:id="@+id/cbLicence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        android:text="Photocopy of Valid Driver’s Licence"/>
+
+    <CheckBox
+        android:id="@+id/cbId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        android:text="Original Govt. ID (Eg. Adhaar Card, Voter ID)"/>
+
+    <CheckBox
+        android:id="@+id/cbPhotograph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        android:text="Renter’s photograph with bike issued"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/cbTermsConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:singleLine="true"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:inputType="textCapCharacters"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tvTermsConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I have read and agree to the"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:text="ID Card/Aadhar Card/Pan Card*"/>
+    <Spinner
+        android:id="@+id/selectIdProof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone"
+        android:hint="ID Card/Aadhar Card/Pan Card"
+        android:background="@drawable/black_border_box"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/button2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:text="Issue"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

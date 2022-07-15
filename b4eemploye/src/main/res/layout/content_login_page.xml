@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.LoginPage"
+    android:background="@color/white"
+    android:padding="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_arrow_back_blue_24dp"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Bike 4 Everything"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/b4e_bike1"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="Employe"/>
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_below="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:background="@drawable/black_border_box"
+        android:padding="@dimen/_10sdp"/>
+
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_below="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Next"
+        style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+
+</RelativeLayout>
