@@ -1,0 +1,123 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:1-54:12
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:9:5-75
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:9:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.CAMERA
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:13:22-62
+uses-permission#android.permission.GET_TASKS
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:14:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:15:22-63
+uses-feature#android.hardware.camera
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:17:5-60
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:17:19-57
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:19:22-65
+permission#com.bike4everything.permission.C2D_MESSAGE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:21:5-23:47
+	android:protectionLevel
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:23:9-44
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:22:9-66
+uses-permission#com.bike4everything.permission.C2D_MESSAGE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:25:5-82
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:25:22-79
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:26:22-79
+uses-feature#0x00020000
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:28:5-30:35
+	android:glEsVersion
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:29:9-41
+	android:required
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:30:9-32
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:32:5-94
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:32:22-91
+application
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:34:5-52:19
+activity#com.b4elibrary.MainActivity
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:37:9-43:20
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:37:19-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:45:9-47:55
+	android:value
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:47:13-52
+	android:name
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml:46:13-58
+uses-sdk
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		ADDED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
+		INJECTED from E:\Zip\Bike4Everythings\b4elibrary\src\main\AndroidManifest.xml
